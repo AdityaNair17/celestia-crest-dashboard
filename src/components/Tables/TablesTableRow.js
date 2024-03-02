@@ -11,7 +11,7 @@ import {
 import React from "react";
 
 function TablesTableRow(props) {
-  const { logo, name, email, subdomain, domain, status, date } = props;
+  const { logo, name, email, subdomain, domain, status, date, self, drive, cognition } = props;
   const textColor = useColorModeValue("gray.700", "white");
   const bgStatus = useColorModeValue("gray.400", "#1a202c");
   const colorStatus = useColorModeValue("white", "gray.400");
@@ -59,6 +59,21 @@ function TablesTableRow(props) {
         </Badge>
       </Td>
       <Td>
+        <Text fontSize="sm" color={textColor} fontWeight="bold" pb=".5rem">
+          {self}
+        </Text>
+      </Td>
+      <Td>
+        <Text fontSize="sm" color={textColor} fontWeight="bold" pb=".5rem">
+          {drive}
+        </Text>
+      </Td>
+      <Td>
+        <Text fontSize="sm" color={textColor} fontWeight="bold" pb=".5rem">
+          {cognition}
+        </Text>
+      </Td>
+      <Td>
         <Text fontSize="md" color={textColor} fontWeight="bold" pb=".5rem">
           {date}
         </Text>
@@ -71,7 +86,7 @@ function TablesTableRow(props) {
             fontWeight="bold"
             cursor="pointer"
           >
-            Edit
+            View
           </Text>
         </Button>
       </Td>

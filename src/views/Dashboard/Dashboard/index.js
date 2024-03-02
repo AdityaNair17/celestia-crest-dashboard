@@ -33,7 +33,7 @@ export default function Dashboard() {
 
   return (
     <Flex flexDirection='column' pt={{ base: "120px", md: "75px" }}>
-      <SimpleGrid columns={{ sm: 1, md: 2, xl: 4 }} spacing='24px'>
+      {/* <SimpleGrid columns={{ sm: 1, md: 2, xl: 4 }} spacing='24px'>
         <MiniStatistics
           title={"Today's Moneys"}
           amount={"$53,000"}
@@ -58,8 +58,8 @@ export default function Dashboard() {
           percentage={8}
           icon={<CartIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
         />
-      </SimpleGrid>
-      <Grid
+      </SimpleGrid> */}
+      {/* <Grid
         templateColumns={{ md: "1fr", lg: "1.8fr 1.2fr" }}
         templateRows={{ md: "1fr auto", lg: "1fr" }}
         my='26px'
@@ -85,38 +85,38 @@ export default function Dashboard() {
             "Wealth creation is a revolutionary recent positive-sum game. It is all about who takes the opportunity first."
           }
         />
-      </Grid>
+      </Grid> */}
       <Grid
         templateColumns={{ sm: "1fr", lg: "1.3fr 1.7fr" }}
         templateRows={{ sm: "repeat(2, 1fr)", lg: "1fr" }}
         gap='24px'
         mb={{ lg: "26px" }}>
         <ActiveUsers
-          title={"Active Users"}
+          title={"Average Personality Scores"}
           percentage={23}
           chart={<BarChart />}
         />
         <SalesOverview
-          title={"Sales Overview"}
+          title={"Sector Overview"}
           percentage={5}
           chart={<LineChart />}
         />
       </Grid>
       <Grid
-        templateColumns={{ sm: "1fr", md: "1fr 1fr", lg: "2fr 1fr" }}
-        templateRows={{ sm: "1fr auto", md: "1fr", lg: "1fr" }}
+        // templateColumns={{ sm: "1fr", md: "1fr 1fr", lg: "2fr 1fr" }}
+        // templateRows={{ sm: "1fr auto", md: "1fr", lg: "1fr" }}
         gap='24px'>
         <Projects
-          title={"Projects"}
+          title={"Start Ups"}
           amount={30}
-          captions={["Companies", "Members", "Budget", "Completion"]}
+          captions={["Company Name", "Founders", "Revenue", "ebitda", "Success Probability"]}
           data={dashboardTableData}
         />
-        <OrdersOverview
+        {/* <OrdersOverview
           title={"Orders Overview"}
           amount={30}
           data={timelineData}
-        />
+        /> */}
       </Grid>
     </Flex>
   );

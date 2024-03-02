@@ -1,5 +1,5 @@
 // Chakra imports
-import { Box, Flex, Grid, Icon } from "@chakra-ui/react";
+import { Box, Flex, Grid, Icon, useColorModeValue, Text } from "@chakra-ui/react";
 // Assets
 import BackgroundCard1 from "assets/img/BackgroundCard1.png";
 import { MastercardIcon, VisaIcon } from "components/Icons/Icons";
@@ -18,11 +18,20 @@ import Invoices from "./components/Invoices";
 import PaymentMethod from "./components/PaymentMethod";
 import PaymentStatistics from "./components/PaymentStatistics";
 import Transactions from "./components/Transactions";
+import Card from "components/Card/Card";
+
 
 function Billing() {
+  const textColor = useColorModeValue("gray.700", "white");
+
   return (
     <Flex direction='column' pt={{ base: "120px", md: "75px" }}>
       <Grid templateColumns={{ sm: "1fr", lg: "2fr 1.2fr" }} templateRows='1fr'>
+      <Card my={{ lg: "24px" }} me={{ lg: "24px" }}>
+      <Text color={textColor} fontSize='lg' fontWeight='bold'>
+            Participated Studies
+          </Text>
+          <br/>
         <Box>
           <Grid
             templateColumns={{
@@ -34,7 +43,7 @@ function Billing() {
             gap='26px'>
             <CreditCard
               backgroundImage={BackgroundCard1}
-              title={"Purity UI"}
+              title={"Regional Analysis - Asia"}
               number={"7812 2139 0823 XXXX"}
               validity={{
                 name: "VALID THRU",
@@ -66,7 +75,7 @@ function Billing() {
               amount={4550}
             />
           </Grid>
-          <PaymentMethod
+          {/* <PaymentMethod
             title={"Payment Method"}
             mastercard={{
               icon: <MastercardIcon w='100%' h='100%' />,
@@ -76,18 +85,21 @@ function Billing() {
               icon: <VisaIcon w='100%' h='100%' />,
               number: "7812 2139 0823 XXXX",
             }}
-          />
+          /> */}
         </Box>
+        </Card>
         <Invoices title={"Invoices"} data={invoicesData} />
       </Grid>
-      <Grid templateColumns={{ sm: "1fr", lg: "1.6fr 1.2fr" }}>
-        <BillingInformation title={"Billing Information"} data={billingData} />
-        <Transactions
+      <Grid 
+      // templateColumns={{ sm: "1fr", lg: "1.6fr 1.2fr" }}
+      >
+        <BillingInformation title={"Research Studies"} data={billingData} />
+        {/* <Transactions
           title={"Your Transactions"}
           date={"23 - 30 March"}
           newestTransactions={newestTransactions}
           olderTransactions={olderTransactions}
-        />
+        /> */}
       </Grid>
     </Flex>
   );

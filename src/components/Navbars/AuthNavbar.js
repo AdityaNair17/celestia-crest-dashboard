@@ -150,6 +150,7 @@ export default function AuthNavbar(props) {
       </NavLink>
     </HStack>
   );
+  return (<></>);
   return (
     <Flex
       position={navbarPosition}

@@ -37,7 +37,7 @@ const Projects = ({ title, amount, captions, data }) => {
             />
             <Text fontSize='sm' color='gray.400' fontWeight='normal'>
               <Text fontWeight='bold' as='span'>
-                {amount} done
+                {amount} invited
               </Text>{" "}
               this month.
             </Text>
@@ -64,7 +64,8 @@ const Projects = ({ title, amount, captions, data }) => {
                 name={row.name}
                 logo={row.logo}
                 members={row.members}
-                budget={row.budget}
+                revenue={row.revenue}
+                ebitda={row.ebitda}
                 progression={row.progression}
               />
             );

@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 
 export default function Footer(props) {
   // const linkTeal = useColorModeValue("teal.400", "red.200");=
+  return (<></>)
   return (
     <Flex
       flexDirection={{

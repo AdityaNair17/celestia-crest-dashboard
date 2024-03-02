@@ -1,6 +1,6 @@
 export const barChartData = [
   {
-    name: "Sales",
+    name: "Companies",
     data: [330, 250, 110, 300, 490, 350, 270, 130, 425],
   },
 ];
@@ -27,10 +27,10 @@ export const barChartOptions = {
     theme: "dark",
   },
   xaxis: {
-    categories: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    show: false,
+    categories: ["Jan", "Feb", "March", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+    show: true,
     labels: {
-      show: false,
+      show: true,
       style: {
         colors: "#fff",
         fontSize: "12px",
@@ -85,12 +85,12 @@ export const barChartOptions = {
 
 export const lineChartData = [
   {
-    name: "Mobile apps",
-    data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+    name: "VC Firm",
+    data: [100, 40, 127, 68, 100, 46],
   },
   {
-    name: "Websites",
-    data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+    name: "Asia Average",
+    data: [73, 90, 95, 65, 168, 27],
   },
 ];
 
@@ -112,18 +112,12 @@ export const lineChartOptions = {
   xaxis: {
     type: "datetime",
     categories: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
+      "Fintech",
+      "Energy",
+      "Healthcare",
+      "Real Estate",
+      "Technology",
+      "Media",
     ],
     labels: {
       style: {

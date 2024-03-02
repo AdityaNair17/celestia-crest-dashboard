@@ -20,9 +20,9 @@ const CreditCard = ({
       background='cover'
       bgPosition='10%'
       p='16px'
-      h={{ sm: "220px", xl: "100%" }}
+      h={{ sm: "100px", xl: "100%" }}
       gridArea={{ md: "1 / 1 / 2 / 3", xl: "1 / 1 / 2 / 3" }}>
-      <CardBody h='100%' w='100%'>
+      <CardBody h='50%' w='100%'>
         <Flex
           direction='column'
           color='white'
@@ -33,9 +33,9 @@ const CreditCard = ({
             <Text fontSize='md' fontWeight='bold'>
               {title}
             </Text>
-            {icon}
+            {/* {icon} */}
           </Flex>
-          <Spacer />
+          {/* <Spacer />
           <Flex direction='column'>
             <Box>
               <Text fontSize='xl' letterSpacing='2px' fontWeight='bold'>
@@ -56,7 +56,7 @@ const CreditCard = ({
                 </Text>
               </Flex>
             </Flex>
-          </Flex>
+          </Flex> */}
         </Flex>
       </CardBody>
     </Card>

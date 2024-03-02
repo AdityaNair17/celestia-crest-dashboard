@@ -103,7 +103,7 @@ function SignIn() {
                 SIGN IN
               </Button>
             </FormControl>
-            <Flex
+            {/* <Flex
               flexDirection='column'
               justifyContent='center'
               alignItems='center'
@@ -115,7 +115,7 @@ function SignIn() {
                   Sign Up
                 </Link>
               </Text>
-            </Flex>
+            </Flex> */}
           </Flex>
         </Flex>
         <Box
