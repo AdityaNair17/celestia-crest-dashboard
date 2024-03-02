@@ -37,9 +37,9 @@ const PaymentStatistics = ({ icon, title, description, amount }) => {
             </Text>
             <Separator />
           </Flex>
-          <Text fontSize='lg' color={textColor} fontWeight='bold'>
+          {/* <Text fontSize='lg' color={textColor} fontWeight='bold'>
             {`%${amount}`}
-          </Text>
+          </Text> */}
         </Flex>
       </CardBody>
     </Card>

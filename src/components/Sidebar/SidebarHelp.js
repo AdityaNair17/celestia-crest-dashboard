@@ -7,6 +7,7 @@ import React from "react";
 export function SidebarHelp(props) {
   // Pass the computed styles into the `__css` prop
   const { children, ...rest } = props;
+  return (<></>)
   return (
     <Flex
       borderRadius="15px"

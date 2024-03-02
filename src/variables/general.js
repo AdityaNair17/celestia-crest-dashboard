@@ -316,39 +316,49 @@ export const tablesProjectData = [
 
 export const invoicesData = [
   {
-    date: "March, 01, 2020",
+    date: "Mar 01, 2024",
     code: "#MS-415646",
     price: "$180",
     logo: FaFilePdf,
     format: "PDF",
+    study: "Regional Analysis - Europe",
+    update: "Phase 2 started"
   },
   {
-    date: "February, 10, 2020",
+    date: "Feb 10, 2024",
     code: "#RV-126749",
     price: "$250",
     logo: FaFilePdf,
     format: "PDF",
+    study: "Global VC Preference",
+    update: "Phase 1 ended"
   },
   {
-    date: "April, 05, 2020",
+    date: "Feb 05, 2024",
     code: "#FB-212562",
     price: "$560",
     logo: FaFilePdf,
     format: "PDF",
+    study: "Sector Focus - Retail",
+    update: "Phase 2 ended"
   },
   {
-    date: "June, 25, 2019",
+    date: "Dec 25, 2023",
     code: "#QW-103578",
     price: "$120",
     logo: FaFilePdf,
     format: "PDF",
+    study: "Sector Focus - Fintech",
+    update: "Phase 1 started"
   },
   {
-    date: "March, 01, 2019",
+    date: "Dec 12, 2023",
     code: "#AR-803481",
     price: "$300",
     logo: FaFilePdf,
     format: "PDF",
+    study: "Regional Analysis - Africa",
+    update: "Phase 2 started"
   },
 ];
 

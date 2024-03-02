@@ -37,10 +37,12 @@ const Invoices = ({ title, data }) => {
             return (
               <InvoicesRow
                 date={row.date}
+                study={row.study}
                 code={row.code}
                 price={row.price}
                 logo={row.logo}
                 format={row.format}
+                update={row.update}
               />
             );
           })}

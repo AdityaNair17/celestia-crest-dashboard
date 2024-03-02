@@ -191,7 +191,7 @@ const SidebarContent = ({ logoText, routes }) => {
         fontSize="11px"
       >
         {/* <CreativeTimLogo w="32px" h="32px" me="10px" /> */}
-        <img src={logo} />
+        <img src={logo} width="40px" height="40px"/>&nbsp;&nbsp;
         <Text fontSize="sm" mt="3px">
           {logoText}
         </Text>

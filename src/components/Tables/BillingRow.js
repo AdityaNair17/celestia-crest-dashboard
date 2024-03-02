@@ -18,7 +18,7 @@ function BillingRow(props) {
   return (
     <Box p="24px" bg={bgColor} my="22px" borderRadius="12px">
       <Flex justify="space-between" w="100%">
-        <Flex direction="column" maxWidth="70%">
+        <Flex direction="column" maxWidth="70%" minWidth="20%">
           <Text color={nameColor} fontSize="md" fontWeight="bold" mb="10px">
             {name}
           </Text>

@@ -35,7 +35,7 @@ const CreditCard = ({
             </Text>
             {/* {icon} */}
           </Flex>
-          <Spacer />
+          {/* <Spacer />
           <Flex direction='column'>
             <Box>
               <Text fontSize='xl' letterSpacing='2px' fontWeight='bold'>
@@ -56,7 +56,7 @@ const CreditCard = ({
                 </Text>
               </Flex>
             </Flex>
-          </Flex>
+          </Flex> */}
         </Flex>
       </CardBody>
     </Card>

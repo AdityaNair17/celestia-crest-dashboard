@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 // Assets
 import signInImage from "assets/img/signInImage.png";
+import logo from "assets/img/logo.png";
 
 function SignIn() {
   // Chakra color mode
@@ -103,7 +104,7 @@ function SignIn() {
                 SIGN IN
               </Button>
             </FormControl>
-            {/* <Flex
+            <Flex
               flexDirection='column'
               justifyContent='center'
               alignItems='center'
@@ -115,20 +116,21 @@ function SignIn() {
                   Sign Up
                 </Link>
               </Text>
-            </Flex> */}
+            </Flex>
           </Flex>
         </Flex>
         <Box
           display={{ base: "none", md: "block" }}
           overflowX='hidden'
           h='100%'
-          w='40vw'
+          w='50vw'
           position='absolute'
-          right='0px'>
+          right='0px'
+          top='50px'>
           <Box
-            bgImage={signInImage}
-            w='100%'
-            h='100%'
+            bgImage={logo}
+            w='80%'
+            h='80%'
             bgSize='cover'
             bgPosition='50%'
             position='absolute'

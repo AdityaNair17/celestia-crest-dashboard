@@ -4,7 +4,7 @@ import { Box, Flex, Grid, Icon, useColorModeValue, Text } from "@chakra-ui/react
 import BackgroundCard1 from "assets/img/BackgroundCard1.png";
 import { MastercardIcon, VisaIcon } from "components/Icons/Icons";
 import React from "react";
-import { FaPaypal, FaWallet } from "react-icons/fa";
+import { FaFilePdf, FaPaypal, FaWallet } from "react-icons/fa";
 import { RiMastercardFill } from "react-icons/ri";
 import {
   billingData,
@@ -63,15 +63,15 @@ function Billing() {
               }
             />
             <PaymentStatistics
-              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaWallet} />}
-              title={"Salary"}
-              description={"Belong interactive"}
+              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaFilePdf} />}
+              title={"Phase 1 Report"}
+              description={"Feb 1, 2024"}
               amount={2000}
             />
             <PaymentStatistics
-              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaPaypal} />}
-              title={"Paypal"}
-              description={"Freelance Payment"}
+              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaFilePdf} />}
+              title={"Phase 2 Report"}
+              description={"March 1, 2024"}
               amount={4550}
             />
           </Grid>
@@ -88,7 +88,7 @@ function Billing() {
           /> */}
         </Box>
         </Card>
-        <Invoices title={"Invoices"} data={invoicesData} />
+        <Invoices title={"Updates"} data={invoicesData} />
       </Grid>
       <Grid 
       // templateColumns={{ sm: "1fr", lg: "1.6fr 1.2fr" }}
