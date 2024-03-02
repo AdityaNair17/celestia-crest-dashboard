@@ -47,7 +47,7 @@ function TablesTableRow(props) {
           </Text>
         </Flex>
       </Td>
-      <Td>
+      {/* <Td>
         <Badge
           bg={status === "Online" ? "green.400" : bgStatus}
           color={status === "Online" ? "white" : colorStatus}
@@ -57,7 +57,7 @@ function TablesTableRow(props) {
         >
           {status}
         </Badge>
-      </Td>
+      </Td> */}
       <Td>
         <Text fontSize="sm" color={textColor} fontWeight="bold" pb=".5rem">
           {self}

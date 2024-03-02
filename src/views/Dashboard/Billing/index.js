@@ -32,7 +32,9 @@ function Billing() {
             Participated Studies
           </Text>
           <br/>
-        <Box>
+        <Box border="1px solid teal" borderRadius='20px' boxShadow='5px 5px 2px teal'>
+        <Card my={{ lg: "24px" }} me={{ lg: "24px" }} >
+          <Text fontSize='md' fontWeight='bold' color='teal'>Regional Analysis - Asia</Text>
           <Grid
             templateColumns={{
               sm: "1fr",
@@ -41,7 +43,7 @@ function Billing() {
             }}
             templateRows={{ sm: "auto auto auto", md: "1fr auto", xl: "1fr" }}
             gap='26px'>
-            <CreditCard
+            {/* <CreditCard
               backgroundImage={BackgroundCard1}
               title={"Regional Analysis - Asia"}
               number={"7812 2139 0823 XXXX"}
@@ -61,7 +63,7 @@ function Billing() {
                   color='gray.400'
                 />
               }
-            />
+            /> */}
             <PaymentStatistics
               icon={<Icon h={"24px"} w={"24px"} color='white' as={FaFilePdf} />}
               title={"Phase 1 Report"}
@@ -75,6 +77,7 @@ function Billing() {
               amount={4550}
             />
           </Grid>
+          </Card>
           {/* <PaymentMethod
             title={"Payment Method"}
             mastercard={{

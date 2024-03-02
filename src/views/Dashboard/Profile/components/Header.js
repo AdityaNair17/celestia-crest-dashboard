@@ -4,9 +4,11 @@ import {
   Box,
   Button,
   Flex,
+  Icon,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { AdobexdLogo } from "components/Icons/Icons";
 import React from "react";
 
 const Header = ({
@@ -69,13 +71,14 @@ const Header = ({
             direction={{ sm: "column", md: "row" }}
             w={{ sm: "100%" }}
             textAlign={{ sm: "center", md: "start" }}>
-            <Avatar
+            {/* <Avatar
               me={{ md: "22px" }}
               src={avatarImage}
               w='80px'
               h='80px'
               borderRadius='15px'
-            />
+            /> */}
+            <Icon as={AdobexdLogo} h={"70px"} w={"70px"} pe="5px" />
             <Flex direction='column' maxWidth='100%' my={{ sm: "14px" }}>
               <Text
                 fontSize={{ sm: "lg", lg: "xl" }}

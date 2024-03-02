@@ -31,12 +31,12 @@ const ProfileInformation = ({
             {description}
           </Text>
           <Flex align='center' mb='18px'>
-            <Text fontSize='md' color={textColor} fontWeight='bold' me='10px'>
+            {/* <Text fontSize='md' color={textColor} fontWeight='bold' me='10px'>
               Full Name:{" "}
             </Text>
             <Text fontSize='md' color='gray.500' fontWeight='400'>
               {name}
-            </Text>
+            </Text> */}
           </Flex>
           <Flex align='center' mb='18px'>
             <Text fontSize='md' color={textColor} fontWeight='bold' me='10px'>

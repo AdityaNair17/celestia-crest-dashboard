@@ -16,12 +16,13 @@ import avatar6 from "assets/img/avatars/avatar6.png";
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
 import CardHeader from "components/Card/CardHeader";
+import { WalletIcon } from "components/Icons/Icons";
 import React from "react";
 
 const Conversations = ({ title }) => {
   // Chakra color mode
   const textColor = useColorModeValue("gray.700", "white");
-
+  const iconBoxInside = useColorModeValue("white", "white");
   return (
     <Card p='16px'>
       <CardHeader p='12px 5px' mb='12px'>
@@ -33,19 +34,19 @@ const Conversations = ({ title }) => {
         <Flex direction='column' w='100%'>
           <Flex justifyContent='space-between' mb='21px'>
             <Flex align='center'>
-              <Avatar
+              {/* <Avatar
                 src={avatar2}
                 w='50px'
                 h='50px'
                 borderRadius='15px'
                 me='10px'
-              />
+              /> */}
               <Flex direction='column'>
-                <Text fontSize='sm' color={textColor} fontWeight='bold'>
-                  Sophie B.{" "}
+                <Text fontSize='lg' color={textColor} fontWeight='bold'>
+                  Self{" "}
                 </Text>
-                <Text fontSize='xs' color='gray.500' fontWeight='400'>
-                  Hi! I need more information...
+                <Text fontSize='md' color='teal.500' fontWeight='bold'>
+                  92
                 </Text>
               </Flex>
             </Flex>
@@ -55,25 +56,25 @@ const Conversations = ({ title }) => {
                 fontWeight='600'
                 color='teal.300'
                 alignSelf='center'>
-                REPLY
+                VIEW
               </Text>
             </Button>
           </Flex>
           <Flex justifyContent='space-between' mb='21px'>
             <Flex align='center'>
-              <Avatar
+              {/* <Avatar
                 src={avatar3}
                 w='50px'
                 h='50px'
                 borderRadius='15px'
                 me='10px'
-              />
+              /> */}
               <Flex direction='column'>
-                <Text fontSize='sm' color={textColor} fontWeight='bold'>
-                  Sophie B.{" "}
+                <Text fontSize='lg' color={textColor} fontWeight='bold'>
+                  Drive{" "}
                 </Text>
-                <Text fontSize='xs' color='gray.500' fontWeight='400'>
-                  Awesome work, can you change...
+                <Text fontSize='md' color='teal.500' fontWeight='bold'>
+                  95
                 </Text>
               </Flex>
             </Flex>
@@ -83,25 +84,26 @@ const Conversations = ({ title }) => {
                 fontWeight='600'
                 color='teal.300'
                 alignSelf='center'>
-                REPLY
+                VIEW
               </Text>
             </Button>
           </Flex>
           <Flex justifyContent='space-between' mb='21px'>
             <Flex align='center'>
-              <Avatar
+              {/* <Avatar
                 src={avatar4}
                 w='50px'
                 h='50px'
                 borderRadius='15px'
                 me='10px'
-              />
+              /> */}
+              {/* <WalletIcon h={"15px"} w={"15px"} color={iconBoxInside} /> */}
               <Flex direction='column'>
-                <Text fontSize='sm' color={textColor} fontWeight='bold'>
-                  Sophie B.{" "}
+                <Text fontSize='lg' color={textColor} fontWeight='bold'>
+                  Cognition{" "}
                 </Text>
-                <Text fontSize='xs' color='gray.500' fontWeight='400'>
-                  Have a great afternoon...
+                <Text fontSize='md' color='teal.500' fontWeight='bold'>
+                  96
                 </Text>
               </Flex>
             </Flex>
@@ -111,11 +113,11 @@ const Conversations = ({ title }) => {
                 fontWeight='600'
                 color='teal.300'
                 alignSelf='center'>
-                REPLY
+                VIEW
               </Text>
             </Button>
           </Flex>
-          <Flex justifyContent='space-between' mb='21px'>
+          {/* <Flex justifyContent='space-between' mb='21px'>
             <Flex align='center'>
               <Avatar
                 src={avatar5}
@@ -170,7 +172,7 @@ const Conversations = ({ title }) => {
                 REPLY
               </Text>
             </Button>
-          </Flex>
+          </Flex> */}
         </Flex>
       </CardBody>
     </Card>

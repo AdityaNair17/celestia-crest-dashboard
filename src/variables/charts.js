@@ -27,7 +27,7 @@ export const barChartOptions = {
     theme: "dark",
   },
   xaxis: {
-    categories: ["Jan", "Feb", "March", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
     show: true,
     labels: {
       show: true,
@@ -112,12 +112,12 @@ export const lineChartOptions = {
   xaxis: {
     type: "datetime",
     categories: [
-      "Fintech",
-      "Energy",
-      "Healthcare",
-      "Real Estate",
-      "Technology",
-      "Media",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
     ],
     labels: {
       style: {

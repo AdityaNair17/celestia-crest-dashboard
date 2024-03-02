@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import PlatformSettings from "./components/PlatformSettings";
 import ProfileInformation from "./components/ProfileInformation";
 import Projects from "./components/Projects";
+import { AdobexdLogo } from "components/Icons/Icons";
 
 function Profile() {
   // Chakra color mode
@@ -24,43 +25,43 @@ function Profile() {
       <Header
         backgroundHeader={ProfileBgImage}
         backgroundProfile={bgProfile}
-        avatarImage={avatar4}
-        name={"Esthera Jackson"}
-        email={"esthera@simmmple.com"}
+        avatarImage={AdobexdLogo}
+        name={"Kulkarni Solutions"}
+        email={"ks@mail.com"}
         tabs={[
           {
             name: "OVERVIEW",
             icon: <FaCube w='100%' h='100%' />,
           },
           {
-            name: "TEAMS",
+            name: "Finances",
             icon: <IoDocumentsSharp w='100%' h='100%' />,
           },
           {
-            name: "PROJECTS",
+            name: "Insights",
             icon: <FaPenFancy w='100%' h='100%' />,
           },
         ]}
       />
-      <Grid templateColumns={{ sm: "1fr", xl: "repeat(3, 1fr)" }} gap='22px'>
-        <PlatformSettings
+      <Grid templateColumns={{ sm: "1fr", xl: "repeat(2, 1fr)" }} gap='22px'>
+        {/* <PlatformSettings
           title={"Platform Settings"}
           subtitle1={"ACCOUNT"}
           subtitle2={"APPLICATION"}
-        />
+        /> */}
         <ProfileInformation
-          title={"Profile Information"}
+          title={"Company Description"}
           description={
-            "Hi, I’m Esthera Jackson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
           }
           name={"Esthera Jackson"}
           mobile={"(44) 123 1234 123"}
-          email={"esthera@simmmple.com"}
+          email={"ks@mail.com"}
           location={"United States"}
         />
-        <Conversations title={"Conversations"} />
+        <Conversations title={"Personality Scores"} />
       </Grid>
-      <Projects title={"Projects"} description={"Architects design houses"} />
+      <Projects title={"Founders"} description={"Architects design houses"} />
     </Flex>
   );
 }

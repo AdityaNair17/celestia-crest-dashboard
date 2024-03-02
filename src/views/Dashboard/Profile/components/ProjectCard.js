@@ -28,9 +28,9 @@ const ProjectCard = ({ image, name, category, avatars, description }) => {
           bg='linear-gradient(360deg, rgba(49, 56, 96, 0.16) 0%, rgba(21, 25, 40, 0.88) 100%)'></Box>
       </Box>
       <Flex direction='column'>
-        <Text fontSize='md' color='gray.500' fontWeight='600' mb='10px'>
+        {/* <Text fontSize='md' color='gray.500' fontWeight='600' mb='10px'>
           {name}
-        </Text>
+        </Text> */}
         <Text fontSize='xl' color={textColor} fontWeight='bold' mb='10px'>
           {category}
         </Text>
@@ -45,13 +45,13 @@ const ProjectCard = ({ image, name, category, avatars, description }) => {
             h='36px'
             fontSize='xs'
             px='1.5rem'>
-            VIEW PROJECT
+            View Founder Details
           </Button>
-          <AvatarGroup size='xs'>
+          {/* <AvatarGroup size='xs'>
             {avatars.map((el, idx) => {
               return <Avatar src={el} key={idx} />;
             })}
-          </AvatarGroup>
+          </AvatarGroup> */}
         </Flex>
       </Flex>
     </Flex>

@@ -10,7 +10,7 @@ function Tables() {
     <Flex direction='column' pt={{ base: "120px", md: "75px" }}>
       <Authors
         title={"Founders Table"}
-        captions={["Founder", "Company", "Status", "Self", "Drive", "Cognition", "Test Date", ""]}
+        captions={["Founder", "Startup", "Self", "Drive", "Cognition", "Test Date", ""]}
         data={tablesTableData}
       />
       {/* <Projects
