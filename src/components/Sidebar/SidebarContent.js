@@ -14,7 +14,7 @@ import { Separator } from "components/Separator/Separator";
 import { SidebarHelp } from "components/Sidebar/SidebarHelp";
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-
+import logo from '../../assets/img/logo.png';
 // this function creates the links and collapses that appear in the sidebar (left menu)
 
 
@@ -190,7 +190,8 @@ const SidebarContent = ({ logoText, routes }) => {
         alignItems="center"
         fontSize="11px"
       >
-        <CreativeTimLogo w="32px" h="32px" me="10px" />
+        {/* <CreativeTimLogo w="32px" h="32px" me="10px" /> */}
+        <img src={logo} />
         <Text fontSize="sm" mt="3px">
           {logoText}
         </Text>
